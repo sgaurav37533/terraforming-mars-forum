@@ -43,5 +43,16 @@ export class CommentService {
         catchError(this.errorHandler.handleError<UserPost>('addUserPost'))
       )
   }
+
+  deleteComment(comment: PostComment): Observable<PostComment> {
+    // TODO: call this method from the page detail view if created
+
+    const url = `${this.commentsUrl}/${comment.id}`;
+    return this.http.delete<PostComment>(url, this.httpOptions).pipe(
+      tap((e) => this.log(`Deleted comment | id=${comment.id} (TAP)`)),
+      catchError(this.errorHandler.handleError<PostComment>("deleteComment"))
+    );
+  }
+
 }
 
