@@ -19,6 +19,7 @@ import { UserPostContainerComponent } from './components/user-post-container/use
 import { UserPostComponent } from './components/user-post/user-post.component';
 import { UserComponent } from './components/user/user.component';
 import { UserPostFormComponent } from './components/user-post-form/user-post-form.component';
+import { UserPostDetailComponent } from './components/user-post-detail/user-post-detail.component';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { UserPostFormComponent } from './components/user-post-form/user-post-for
     LeaguePostComponent,
     UserComponent,
     LeaguePostComponent,
-    UserPostFormComponent
+    UserPostFormComponent,
+    UserPostDetailComponent
   ],
   imports: [
     BrowserModule,
