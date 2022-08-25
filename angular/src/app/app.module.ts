@@ -33,6 +33,7 @@ import { UserPostDetailComponent } from './components/user-post-components/user-
 import { ProfilePageComponent } from './components/user/profile-page/profile-page.component';
 import { UserRegisterDialogComponent } from './components/user/register/user-register-dialog.component';
 import { LoginDialogComponent } from './components/user/login-dialog/login-dialog.component';
+import {MatIconModule} from "@angular/material/icon";
 
 
 @NgModule({
@@ -60,27 +61,28 @@ import { LoginDialogComponent } from './components/user/login-dialog/login-dialo
     UserRegisterDialogComponent,
     LoginDialogComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule,
-    // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
-    // and returns simulated server responses.
-    // Remove it when a real server is ready to receive requests.
-    HttpClientInMemoryWebApiModule.forRoot(
-      InMemoryDataService, {dataEncapsulation: false}
-    ),
-    FormsModule,
-    ReactiveFormsModule,
-    BrowserAnimationsModule,
-    MatSliderModule,
-    MatDialogModule,
-    MatButtonModule,
-    MatFormFieldModule,
-    MatInputModule,
-    MatCardModule,
-    MatProgressSpinnerModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        HttpClientModule,
+        // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
+        // and returns simulated server responses.
+        // Remove it when a real server is ready to receive requests.
+        HttpClientInMemoryWebApiModule.forRoot(
+            InMemoryDataService, {dataEncapsulation: false}
+        ),
+        FormsModule,
+        ReactiveFormsModule,
+        BrowserAnimationsModule,
+        MatSliderModule,
+        MatDialogModule,
+        MatButtonModule,
+        MatFormFieldModule,
+        MatInputModule,
+        MatCardModule,
+        MatProgressSpinnerModule,
+        MatIconModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
