@@ -32,7 +32,7 @@ import {MatProgressSpinnerModule} from "@angular/material/progress-spinner";
 import { UserPostDetailComponent } from './components/user-post-components/user-post-detail/user-post-detail.component';
 import { ProfilePageComponent } from './components/user/profile-page/profile-page.component';
 import { UserRegisterDialogComponent } from './components/user/register/user-register-dialog.component';
-import { LoginComponent } from './components/user/login/login.component';
+import { LoginDialogComponent } from './components/user/login-dialog/login-dialog.component';
 
 
 @NgModule({
@@ -58,7 +58,7 @@ import { LoginComponent } from './components/user/login/login.component';
     UserPostDetailComponent,
     ProfilePageComponent,
     UserRegisterDialogComponent,
-    LoginComponent,
+    LoginDialogComponent,
   ],
   imports: [
     BrowserModule,
