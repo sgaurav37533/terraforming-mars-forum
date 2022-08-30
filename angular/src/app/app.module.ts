@@ -33,6 +33,7 @@ import {MatIconModule} from "@angular/material/icon";
 import {LeaguePostDetailComponent} from "./components/league-posts/league-post-detail/league-post-detail.component";
 import { TextareaDialogComponent } from './components/dialog-components/textarea-dialog/textarea-dialog.component';
 import { PageNotFoundComponent } from './components/error-pages/page-not-found/page-not-found.component';
+import { InternalServerErrorComponent } from './components/error-pages/internal-server-error/internal-server-error.component';
 
 
 @NgModule({
@@ -55,6 +56,7 @@ import { PageNotFoundComponent } from './components/error-pages/page-not-found/p
     UserRegisterDialogComponent,
     TextareaDialogComponent,
     PageNotFoundComponent,
+    InternalServerErrorComponent,
   ],
   imports: [
     BrowserModule,
