@@ -34,6 +34,7 @@ import {LeaguePostDetailComponent} from "./components/league-posts/league-post-d
 import { TextareaDialogComponent } from './components/dialog-components/textarea-dialog/textarea-dialog.component';
 import { PageNotFoundComponent } from './components/error-pages/page-not-found/page-not-found.component';
 import { InternalServerErrorComponent } from './components/error-pages/internal-server-error/internal-server-error.component';
+import { ErrorDetailComponent } from './components/error-pages/error-detail/error-detail.component';
 
 
 @NgModule({
@@ -57,6 +58,7 @@ import { InternalServerErrorComponent } from './components/error-pages/internal-
     TextareaDialogComponent,
     PageNotFoundComponent,
     InternalServerErrorComponent,
+    ErrorDetailComponent,
   ],
   imports: [
     BrowserModule,
