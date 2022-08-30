@@ -32,6 +32,7 @@ import { UserRegisterDialogComponent } from './components/user/register/user-reg
 import {MatIconModule} from "@angular/material/icon";
 import {LeaguePostDetailComponent} from "./components/league-posts/league-post-detail/league-post-detail.component";
 import { TextareaDialogComponent } from './components/dialog-components/textarea-dialog/textarea-dialog.component';
+import { PageNotFoundComponent } from './components/error-pages/page-not-found/page-not-found.component';
 
 
 @NgModule({
@@ -53,6 +54,7 @@ import { TextareaDialogComponent } from './components/dialog-components/textarea
     ProfilePageComponent,
     UserRegisterDialogComponent,
     TextareaDialogComponent,
+    PageNotFoundComponent,
   ],
   imports: [
     BrowserModule,
